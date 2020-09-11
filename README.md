@@ -163,7 +163,7 @@ module "k3s" {
 
 ### Security warning
 
-Because using external references on `destroy` provisionner is deprecated by Terraform, storing information
+Because using external references on `destroy` provisioner is deprecated by Terraform, storing information
 inside each resources will be mandatory in order to manage several features like auto-draining node 
 and fields management. So, several fields like `connection` block will be available in your TF state. 
 This means that used password or private key will be **clearly readable** in this TF state.  
